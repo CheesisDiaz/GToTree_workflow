@@ -20,22 +20,35 @@ curl -L -o syn-gtotree-example.tar.gz https://ndownloader.figshare.com/files/236
 ```
 Were the commands did the following actions:
 - curl ; Transfer data from a server
-- L ; It's to define the site from were we'll obtain the data
-- o ; It's to define where we want to store the file or to name is at we require
+- L ; Define the site from were we'll obtain the data
+- o ; Define where we want to store the file or to name is at we require
 
-So based on the command we are downloading the dataset and renaming it syn-gtotree-example.tar.gz to be a compressed file
+So based on the command we are downloading the dataset and renaming it syn-gtotree-example.tar.gz to be a compressed archive
 
 To extract the files from the compressed archive we'll use the tar command 
 ```
 tar -xvzf syn-gototree-example.tar.gz
 ```
 Were the commands did the following actions:
-- x ; extract the data from the file
+- x ; extract the files from the archive
 - v ; show the progress of the extraction
-- z ; filter the data through gzip
-- f ; create archives with given filenames
+- z ; filter the files through gzip
+- f ; create files with given filenames
 
-This will create a folder with the same name. From this we will need to obtain the list of the extracted files (Assembly Acessions)
+This will create a folder with the following files
+- Sequence Genomes Files (fasta files)
+- NCBI Assembly accessions (ref-syn-accs.txt)
+
+To input the data we need to list them in a txt file
+```
+ls *.fa > our-genome-fasta-files.txt
+```
+Were the commands did the following actions:
+- ls ; create a list 
+- *.fa ; this will include every file that has a name terminating with fasta type file
+
+## Obtaining Target Genes
+
 
 ## Phylogenetic Tree for Synechococcus Genomes
 !["Phylogenetic Tree"](./TreeScaleGenome.PNG)
