@@ -93,5 +93,20 @@ gtt-gen-itol-map -g labels-to-color.txt -o iToL-colors.txt
 The following files need to be downloaded to the computer you're using to upload then to : https://itol.embl.de/
 - Syn-GtoTree-out.tre
 - iToL-colors.txt
+
+### iTOL : Interactive Tree of Life
+
+After clicking the link showed above we'll see the following window
+![image](https://user-images.githubusercontent.com/89626045/151916793-4644dc4d-8b83-462f-ae0c-c24acbb12b9d.png)
+
+Where we'll select the Upload option on the menu above and input our Tree name (_Synechococcus_) and input Syn-GtoTree-out.tre
+![image](https://user-images.githubusercontent.com/89626045/151917163-b8478621-3b59-4e1f-843d-dc57b9772ea4.png)
+
+It will give us a draft which we can modify, for our purpose we'll Reroot the tree structure to the genome _Gloeobacter violaceus_
+![image](https://user-images.githubusercontent.com/89626045/151917500-7d18330f-f02d-412d-9c26-7eeb0c3cada3.png)
+
+And finally we'll drop our iTOL color file to highlight our genomes 
+
 ## Phylogenetic Tree for Synechococcus Genomes
+As a final result below i showed the result of following Phylogenetic Tree Guide.
 !["Phylogenetic Tree"](./TreeScaleGenome.PNG)
